@@ -13,7 +13,7 @@ VERSION = 1.0.0.0
 QMAKE_TARGET_COMPANY = Niun Apps
 QMAKE_TARGET_PRODUCT = Mod Manager V
 QMAKE_TARGET_DESCRIPTION = Modding your life!
-QMAKE_TARGET_COPYRIGHT = Attribution-NonCommercial-NoDerivatives 4.0 International
+QMAKE_TARGET_COPYRIGHT = LGPL
 
 TARGET = ModManagerV
 TEMPLATE = app
