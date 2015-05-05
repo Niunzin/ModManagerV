@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Mod Manager V</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/icon.png</normaloff>:/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralWidget
+{
+background: transparent url(:/resources/background.png) fixed center;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="txt_Title">
+        <property name="styleSheet">
+         <string notr="true">font-size: 14px; color: #FFF;</string>
+        </property>
+        <property name="text">
+         <string>No mod selected</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_tr_en">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0.068, stop:0 rgba(204, 204, 204, 255), stop:1 rgba(240, 240, 240, 255));
+	padding: 4px;
+	color: #FFF;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+QPushButton::hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(204, 204, 204, 255), stop:1 rgba(240, 220, 220, 255));
+}
+
+QPushButton::!enabled {
+	background-color: #ccc;
+	color: #555;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/resources/flag_en.png</normaloff>:/resources/flag_en.png</iconset>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_tr_br">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0.068, stop:0 rgba(204, 204, 204, 255), stop:1 rgba(240, 240, 240, 255));
+	padding: 4px;
+	color: #FFF;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+QPushButton::hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(204, 204, 204, 255), stop:1 rgba(240, 220, 220, 255));
+}
+
+QPushButton::!enabled {
+	background-color: #ccc;
+	color: #555;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/resources/flag_br.png</normaloff>:/resources/flag_br.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QListWidget" name="list_mods">
+          <property name="styleSheet">
+           <string notr="true">background: rgba(0, 0, 0, 0.45);
+color: #FFF;
+border-radius: 4px;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0.988636, stop:0 rgba(113, 237, 117, 255), stop:1 rgba(114, 210, 125, 255));
+	padding: 4px;
+	color: #333;
+	border: 1px solid rgb(34, 112, 11);
+	border-radius: 4px;
+}
+
+QPushButton::hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0.988636, stop:0 rgba(114, 210, 125, 255), stop:1 rgba(113, 237, 117, 255));
+}
+
+QPushButton::!enabled {
+	background-color: #ccc;
+	color: #555;
+}</string>
+          </property>
+          <property name="text">
+           <string>Reload</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame#frame {
+background: rgba(0, 0, 0, 0.45);
+color: #FFF;
+border-radius: 4px;
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="txt_Status_label">
+             <property name="styleSheet">
+              <string notr="true">color: #FFF;</string>
+             </property>
+             <property name="text">
+              <string>Mod Status:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="txt_Status">
+             <property name="styleSheet">
+              <string notr="true">color: #FFF; font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>Disabled</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QPushButton" name="btn_ToggleMod">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0.988636, stop:0 rgba(0, 180, 255, 255), stop:1 rgba(0, 130, 210, 255));
+	padding: 4px;
+	color: #FFF;
+	border: 1px solid #000;
+	border-radius: 4px;
+}
+
+QPushButton::hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0.988636, stop:0 rgba(0, 130, 210, 255), stop:1 rgba(0, 180, 255, 255));
+}
+
+QPushButton::!enabled {
+	background-color: #ccc;
+	color: #555;
+}</string>
+             </property>
+             <property name="text">
+              <string>Enable</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QPushButton" name="btn_Uninstall">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(183, 0, 0, 255), stop:1 rgba(151, 0, 0, 255));
+	padding: 4px;
+	color: #FFF;
+	border: 1px solid #000;
+	border-radius: 4px;
+}
+
+QPushButton::hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0.988636, stop:0 rgba(151, 0, 0, 255), stop:1 rgba(183, 0, 0, 255));
+}
+
+QPushButton::!enabled {
+	background-color: #ccc;
+	color: #555;
+}</string>
+             </property>
+             <property name="text">
+              <string>Uninstall Mod</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+          <zorder></zorder>
+          <zorder>btn_Uninstall</zorder>
+          <zorder>btn_ToggleMod</zorder>
+          <zorder>txt_Status</zorder>
+          <zorder>txt_Status_label</zorder>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="logs">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: rgba(0, 0, 0, 0.45);
+color: #FFF;
+border-radius: 4px;</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="textInteractionFlags">
+           <set>Qt::TextBrowserInteraction</set>
+          </property>
+          <property name="placeholderText">
+           <string>No information</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">background: rgba(0, 0, 0, 0.45);
+color: #FFF;
+border-radius: 4px;
+padding: 10px;</string>
+      </property>
+      <property name="text">
+       <string>Niunzin - 2015</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="actionPortugu_s_do_Brasil">
+   <property name="text">
+    <string>Português do Brasil</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

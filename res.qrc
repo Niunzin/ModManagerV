@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/background.png</file>
+        <file>icon.png</file>
+        <file>resources/flag_br.png</file>
+        <file>resources/flag_en.png</file>
+    </qresource>
+</RCC>
